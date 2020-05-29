@@ -1,3 +1,7 @@
+Tensor Three is built on top of fullstack boilermaker,
+
+For info on how to use Tensor Three, visit
+
 # Boilermaker
 
 _Good things come in pairs_
