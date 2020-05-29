@@ -1,0 +1,143 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AauxNext-Ultra;\f1\fnil\fcharset0 AauxNext-Light;\f2\fnil\fcharset0 AauxNext-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww13040\viewh16160\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Your Vision
+\f1\b0\fs24 \
+\'97I\'92ve set out to make a Science Fiction themed, inclusive, body positive, interactive fitness game/app. It's a game in the sense that you're able to earn points, and move on to more challenging levels. It's an fitness app because you will be able to utilize it to achieve your fitness goals.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97It's kind of like DRR, because you're trying to match provided movements.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I\'92ve been wanting to make this app for quite a while, and have been lightly researching the technology to use since I've understood it, aka async week.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I intend on fully realizing this app after GH and making it into a useful VR app for people who want a fun, but health goal oriented fitness app, that doesnt involve shooting things or fat or general shaming.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs48 \cf2 User Story
+\f1\b0\fs24 \
+\'97So far, my user is able to load their camera and have their movements tracked by tensorflow posenet. On the left is a dashboard that will have workout stats and goals. On the bottom is the fitness instructor window. Which will load an animated 3d model. The user replicates the instructors movements and earns points when they match. This is done by comparing the two with posenet's 17 keypoints approximations.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs48 \cf2 The Technologies
+\f1\b0\fs24 \
+\'97We begin w 
+\f2\b Navigator.MediaDevices.GetUserMedia
+\f1\b0 , it asks user to share their camera. \
+\'97
+\f2\b Tensorflow ML model Posenet 
+\f1\b0 tracks the movements of the 17 keypoints. \
+\'97On the left 
+\f2\b three.js 
+\f1\b0 loads a scene composed of a few components. \
+\'97Some animated 3d models are converted to 
+\f2\b threejs
+\f1\b0  friendly compiler -> \
+\'97 
+\f2\b Perlin Algorithm
+\f1\b0  for what is for now the landscape below instructor\
+\'97
+\f2\b BlackThread.io FBX to GLTF
+\f1\b0  model converter\
+\'97
+\f2\b GLTFL 
+\f1\b0 Loads some of the models. Loads a posenet on the instructor image, and compares the two keypoints.\
+\'97Probably webgl GLTFL loader, when I figure out the instructor model\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\'97OPEN SOURCE: yoyota person on GitHub, \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I learnt a lot. I was initially thinking I would compare raw mocap data, and when looking at what that entailed in comparison to the data produced by tensor flow, I realized it was crazy.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I learnt how to create a scene in three.js. Much more to learn lve barely scratched the surface.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I already knew this but I've further confirmed it, react is awesome.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97I learned about react proptypes and used a few hooks! And created some hooks. Finally !\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97Loading a model into three is is super hard.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f2\b\fs48 \cf2 Advice and Postmortem
+\f1\b0\fs24 \
+\'97Dont test out every possible tensorflow model, just start using one, maybe upgrade later.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\
+\
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs48 \cf2 Future Features
+\f1\b0\fs24 \
+\'97Before GH program is over, I want to be able to compare user movements to instructor movements.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97The user can customize a workout, or use a pre customized one.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97At every point milestone, the user can level up to more challenging workouts.\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97Eventually migrate to AR\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97upgrade algorithm for accuracy so the user can be given precise guidance on movements, for stability, flexibility and other fitness goals.\'a0\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97After graduation, I'll work on integrating more complex workouts\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97Add music\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \'97User pages with stats,\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+}
